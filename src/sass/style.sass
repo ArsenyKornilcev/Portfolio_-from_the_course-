@@ -1,0 +1,76 @@
+@import "libs/bootstrap-reboot.min"
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+@import "base/variables"
+
+*
+	font-family: "Poppins", sans-serif
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	position: relative
+img
+	object-fit: cover
+::-webkit-scrollbar
+	width: 0
+.container
+	width: 1140px
+	margin: 0 auto
+.title
+	font-weight: 700
+	font-size: 36px
+.section-title
+	font-weight: 700
+	font-size: 16px
+.title-holder
+	margin-bottom: 20px
+	.section-title
+		position: relative
+		z-index: 2
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: -12px
+			top: 50%
+			transform: translate(0, -50%)
+			width: 36px
+			height: 36px
+			border-radius: 50%
+			background: $main-color
+			z-index: -1
+	&_center
+		text-align: center
+		margin-bottom: 60px
+		.section-title
+			&::after
+				left: 50%
+				transform: translate(-50%, -50%)
+		&::after
+			margin: 25px auto 0!important
+	&::after
+		content: ''
+		display: block
+		height: 3px
+		width: 60px
+		margin-top: 4px
+		background: $main-color
+	&_promo
+		&::after
+			display: none
+
+@import 'base/mixins'
+@import 'blocks/promo'
+@import 'blocks/about'
+@import 'blocks/experience'
+@import 'blocks/skills'
+@import 'blocks/abilities'
+@import 'blocks/works'
+@import 'blocks/prices'
+@import 'blocks/contact'
+@import 'blocks/aside'
+@import 'blocks/menu'
+
+
+@import 'media/media'

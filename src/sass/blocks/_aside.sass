@@ -1,0 +1,24 @@
+.sidepannel
+	margin-top: 28vh
+	position: fixed
+	display: flex
+	flex-flow: column wrap-reverse
+	align-items: center
+	gap: 15px
+	z-index: 100
+	img
+		transition: .3s ease
+		&:hover
+			transform: rotate(90deg)
+	&__divider
+		content: ''
+		display: block
+		height: 70px
+		width: 2px
+		background: #000
+	&__text
+		font-size: 16px
+		font-weight: 700
+		span
+			display: block
+			transform: rotate(-90deg) translate(-45%,-5%)

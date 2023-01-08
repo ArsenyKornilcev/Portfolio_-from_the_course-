@@ -1,0 +1,36 @@
+.about
+	.container
+		display: flex
+		gap: 70px
+		padding: 120px 0
+	.text
+		margin-bottom: 40px
+		font-size: 14px
+		line-height: 21px
+	.advantage
+		display: grid
+		grid-template-columns: 40px auto
+		gap: 20px
+		&__icon
+			width: 36px
+			height: 36px
+			background: $main-color
+			border-radius: 50%
+			position: relative
+			img
+				position: absolute
+				top: 27px
+				left: 27px
+				transform: translate(-50%, -50%)
+		&__descr
+			font-size: 12px
+			display: flex
+			flex-flow: column wrap
+			gap: 6px
+		&__title
+			font-size: 14px
+			font-weight: 700
+	&__advantages
+		display: grid
+		grid-template-columns: 1fr 1fr
+		gap: 40px 50px

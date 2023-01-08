@@ -1,0 +1,416 @@
+@media screen and (max-width: 1399px)
+	header
+		li:not(:last-child)
+			a
+				padding-right: 30px
+
+@media screen and (max-width: 1199px)
+	header
+		li
+			a
+				font-size: 14px
+		li:not(:last-child)
+			a
+				padding-right: 16px
+	.promo
+		h1
+			font-size: 50px
+		h2
+			font-size: 30px
+	footer
+		.menu
+			.secondary
+				a
+					font-size: 9px
+	.mobile
+		.card
+			width: 300px
+			margin: 0 auto 0
+
+@media screen and (max-width: 991px)
+	header
+		li
+			a
+				font-size: 10px
+		li:not(:last-child)
+			a
+				padding-right: 12px
+		.brand-name
+			p
+				font-size: 11px
+			img
+				width: 100%
+		.reg-btn
+			font-size: 9px
+			width: 113px
+			height: 40px
+	.promo
+		h1
+			font-size: 40px
+		h2
+			font-size: 25px
+	.choice
+		img
+			width: 500px
+		.black
+			height: 460px
+	.contact
+		a
+			font-size: 18px
+		p:first-of-type
+			font-size: 10px
+	.advantages
+		img
+			width: 80px
+		.row
+			margin-top: 30px
+		.card
+			flex-flow: column nowrap
+			align-items: center
+			gap: 20px
+			.text
+				font-size: 14px
+	.section-title
+		font-size: 30px
+	.section-subtitle
+		font-size: 15px
+	.row
+		padding: 0
+	.container
+		padding-right: 0
+		padding-left: 0
+	footer
+		col
+			padding: 0
+		.app_links
+			img
+				width: 200px
+				height: 23px
+		.menu
+			&:before
+					height: 4px
+			.main
+				margin-top: 20px
+				font-size: 13px
+			.secondary
+				margin-top: 10px
+				font-size: 8px
+	.mobile
+		.card
+			width: 100%
+			height: 225px
+			.card_subtitle
+				font-size: 16px
+			
+@media screen and (max-width: 949px)
+	footer	
+		.menu
+			.main
+				a
+					font-size: 13px
+			.secondary
+				a
+					font-size: 8px
+		.menu
+			&:before
+				width: 98%
+
+@media screen and (max-width: 849px)
+	footer	
+		.col-4
+			padding-left: 0
+			padding-right: 0
+
+@media screen and (max-width: 767px)
+	.row
+		margin: 0
+	header
+		nav 
+			ul
+				position: fixed
+				top: 0
+				left: -100%
+				flex-direction: column
+				justify-content: center
+				align-items: flex-start
+				gap: 2px
+				width: 50%
+				height: 100vh
+				padding: 0
+				background: rgba(0, 0, 0, .8)
+				transition: .5s all
+				&.active
+					left: 0
+				a
+					text-align: right
+					display: block
+					font-size: 20px
+					width: 100%
+					background: rgb(0, 0, 0)
+					padding: 10px 15px
+				li
+					width: 100%	
+				
+				li:not(:last-child)
+					a
+						border: 0
+
+		.contact
+			a
+				font-size: 16px
+
+		.hamburger
+			display: block
+			position: absolute
+			right: 20px
+			top: 50%
+			transform: translateY(-50%)
+			width: 20px
+			height: 12px
+			span
+				display: block
+				height: 2px
+				width: 100%
+				background: #fff
+				margin-bottom: 2px
+				transition: 0.5s
+			&.active
+				span
+					margin-top: 4px
+					margin-bottom: -6px
+					&:nth-child(1)
+						transform: rotate(-45deg)
+					&:nth-child(2)
+						display: none
+					&:nth-child(3)
+						transform: rotate(45deg)
+
+	.require_title
+		font-size: 16px
+	.require_block
+		margin-bottom: 0
+	.require_list
+		padding-left: 40px
+		margin-top: 10px
+		li
+			font-size: 14px
+			margin-bottom: 8px
+			&::before
+				width: 16px
+				height: 15px
+				left: -22px
+	.require_des
+		font-size: 14px
+	.promo
+		.row
+			width: 100%
+		h1
+			font-size: 30px
+		h2
+			font-size: 20px
+		p
+			margin-bottom: 60px
+	.choice
+		height: 600px
+		padding-bottom: 20px
+		img
+			width: 350px
+		.black
+			height: 355px
+	.world
+		height: 550px
+		.link_holder
+			margin-top: 340px
+	.contact
+		p
+			font-size: 9px
+	.card
+		justify-content: center
+		.text
+			font-size: 14px
+	.section-title
+		font-size: 25px
+	.section-subtitle
+		font-size: 15px
+	.row
+		padding: 0
+	.container
+		padding-right: 0
+		padding-left: 0
+	footer
+		col
+			padding: 0
+		.app_links
+			img
+				width: 130px
+				height: 20px
+		.menu
+			&:before
+					height: 4px
+			.main
+				margin-top: 20px
+			.secondary
+				margin-top: 10px
+		.menu
+			.main
+				a
+					font-size: 9px
+			.secondary
+				a
+					font-size: 6px
+	.mobile
+		padding-bottom: 40px
+		.card
+			width: 100%
+			height: 170px
+			padding-top: 40px
+			.card_subtitle
+				font-size: 12px
+	.xs-hidden
+		display: none
+	.subheader
+		padding: 10px 0
+		.contact-xs
+			display: flex
+			align-items: center
+			flex-flow: column wrap
+			.reg-btn
+				margin-top: 6px
+				height: 36px
+				width: 200px
+				font-size: 10px
+			.tel
+				display: block	
+		.brand-name
+			margin-top: 23px
+			p
+				display: none
+
+@media screen and (max-width: 320px)
+	.row
+		margin: 0
+	header
+		nav
+			height: 32px
+			ul
+				a
+					font-size: 16px
+		.subheader
+			margin-top: 32px
+			.brand-name
+				margin-top: 9px
+				img
+					display: block
+					margin-left: 16px
+			.contact-xs
+				padding-left: 20px
+				padding-right: 0
+				.tel
+					font-size: 12px
+				.reg-btn
+					font-size: 10px
+					width: 110px
+					height: 22px
+					margin: 6px 0 0
+	.mobile
+		padding-top: 25px
+		max-height: none
+		.container
+			.row
+				margin-top: 0
+				> div
+					margin-top: 30px
+		.card
+			height: 254px
+			padding-top: 80px
+			.card_subtitle
+				padding-right: 15px
+				padding-left: 15px
+				font-size: 18px
+	.promo
+		min-height: 0
+		padding-top: 200px
+		padding-bottom: 35px
+		.reg-btn
+			margin-top: 72px
+			height: 50px
+			width: 210px
+			font-size: 16px
+			padding: 0
+	.require
+		padding-top: 25px
+		padding-bottom: 14px
+		.require_block
+			margin-top: 30px
+		.row
+			padding-right: 16px
+			padding-left: 16px
+	.choice
+		position: relative
+		padding: 0
+		background: #000
+		height: 400px
+		.black
+			display: none
+		.container
+			top: 25px
+			margin: 0
+		.best
+			color: #fff
+	.section-title
+		margin-top: 16px
+		font-size: 16px
+	.section-subtitle
+		margin-top: 9px
+		font-size: 14px
+	.advantages
+		padding-top: 20px
+		padding-bottom: 38px
+		.row
+			margin-top: 24px
+		.text
+			width: 100%
+			padding: 0 16px
+			p
+				font-size: 15px
+			.header
+				font-size: 16px
+			
+		img
+			width: 103px
+	.choice
+		img
+			width: 300px
+	.world
+		height: 360px
+		.link_holder
+			margin-top: 170px
+	footer
+		padding: 11px 18px 30px
+		.row
+			.media_holder
+				order: 2
+				.media
+					padding-top: 16px
+					display: flex
+					justify-content: center
+			.menu_holder
+				order: 1
+				.menu
+					&::before
+						width: 255px
+					.main
+						a
+							font-size: 14px
+					.secondary
+						a
+							font-size: 9px
+				.language
+					font-size: 11px
+			.app_links
+				order: 3
+				justify-content: center
+				padding-top: 19px
+				img
+					width: 260px
+					height: 24px

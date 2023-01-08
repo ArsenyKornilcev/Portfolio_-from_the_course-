@@ -1,0 +1,29 @@
+.works
+    margin-bottom: 60px
+    &__items
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: 1fr 1fr
+        gap: 5px
+        
+    &__item
+        overflow: hidden
+        a
+            text-decoration: none
+        
+        img
+            height: 100%
+            width: 100%
+            filter: grayscale(1)
+            transition: .5s
+            &:hover
+                filter: grayscale(0)
+        &:nth-child(4)
+            grid-column-start: 4 
+            grid-row-start: 1
+            grid-row-end: 3
+
+        &:nth-child(6)
+            grid-column-start: 2
+            grid-column-end: 4
+            

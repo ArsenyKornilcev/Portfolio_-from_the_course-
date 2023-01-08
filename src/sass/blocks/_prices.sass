@@ -1,0 +1,35 @@
+.prices
+	margin: 0 0 120px
+	.container
+		padding: 0 50px
+	&__groups
+		display: flex
+		justify-content: space-between
+	&__group
+		display: flex
+		flex-flow: column wrap
+		gap: 15px
+		padding-left: 25px
+	&__item
+		position: relative
+		display: flex
+		flex-flow: column wrap
+		gap: 5px
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 3px
+			left: -25px
+			background: $main-color
+			border-radius: 50% 
+			width: 15px
+			height: 15px
+
+		.item-header
+			display: flex
+			justify-content: space-between
+			font-weight: 700
+			font-size: 14px
+		.item-descr
+			font-size: 12px
